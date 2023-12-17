@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const Item_Per_Page = 6;
+const Item_Per_Page = 5;
 
 const API = "https://hacker-news.firebaseio.com/v0";
 
