@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import JobPosting from "./components/JobPosting";
 
 const Item_Per_Page = 5;
 
@@ -42,6 +43,9 @@ function App() {
     <>
       <div className="news_app">
         <h1 className="news_app--title">News Group</h1>
+        <div>
+          <JobPosting />
+        </div>
       </div>
     </>
   );
