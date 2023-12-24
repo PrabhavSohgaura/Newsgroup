@@ -33,13 +33,14 @@ function App() {
     );
 
     setItems([...items, ...ItemPerPage]);
+    setFetching(false);
   };
 
   useEffect(() => {
     if (currentPage === 0) fetchPost(currentPage);
   }, [currentPage]);
 
-  console.log(items);
+  console.log(itemIds);
 
   return (
     <>
