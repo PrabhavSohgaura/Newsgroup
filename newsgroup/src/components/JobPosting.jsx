@@ -1,10 +1,9 @@
 import React from "react";
 
-const JobPosting = () => {
+const JobPosting = (item) => {
   return (
     <div>
-      <h1>title</h1>
-      <p>para</p>
+      <h1>{item.title}</h1>
     </div>
   );
 };

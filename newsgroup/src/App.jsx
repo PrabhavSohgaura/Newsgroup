@@ -40,15 +40,23 @@ function App() {
     if (currentPage === 0) fetchPost(currentPage);
   }, [currentPage]);
 
-  console.log(itemIds);
+  console.log(items);
 
   return (
     <>
       <div className="news_app">
         <h1 className="news_app--title">News Group</h1>
-        <div>
-          <JobPosting />
-        </div>
+        {itemIds === null || items.length < 1 ? (
+          <p>Loading...</p>
+        ) : (
+          <div>
+            <div>
+              {items.map((item) => (
+                <JobPosting key={item.id} {...item} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
