@@ -27,8 +27,8 @@ function App() {
     );
 
     const ItemPerPage = await Promise.all(
-      itemIdsForPage.map((item) =>
-        fetch(`${API}/item/${item}.json`).then((response) => response.json)
+      itemIdsForPage.map((itemId) =>
+        fetch(`${API}/item/${itemId}.json`).then((response) => response.json())
       )
     );
 
