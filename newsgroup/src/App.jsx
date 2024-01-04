@@ -40,8 +40,6 @@ function App() {
     if (currentPage === 0) fetchPost(currentPage);
   }, [currentPage]);
 
-  console.log(items);
-
   return (
     <>
       <div className="news_app">
