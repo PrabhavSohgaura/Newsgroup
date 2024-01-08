@@ -3,7 +3,7 @@ import "./JobPosting.css";
 const JobPosting = (item) => {
   return (
     <div className="container">
-      <h1>{item.title}</h1>
+      <a>{item.title}</a>
       <span>By {item.by}</span>
     </div>
   );
